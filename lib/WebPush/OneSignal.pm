@@ -45,7 +45,7 @@ Perhaps a little code snippet.
 
 =head1 METHODS
 
-=head2 function1
+=head2 send_notification
 
 =cut
 
@@ -153,7 +153,7 @@ sub edit_device {
 
     $curl->setopt( CURLOPT_WRITEDATA     , \$response_body);
 
-    mytry {
+    try {
         $curl->perform;
     };
 
